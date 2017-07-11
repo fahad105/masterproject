@@ -1,0 +1,1 @@
+This folder contains all scripts and configuration files that are used on the Kasadaka for this project. 
