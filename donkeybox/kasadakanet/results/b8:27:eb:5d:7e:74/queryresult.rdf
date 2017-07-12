@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY ns2 'http://example.org/foroba-blon/'>
+    <!ENTITY ns3 'http://purl.org/collections/w4ra/speakle/'>
+    <!ENTITY ns4 'http://lexvo.org/ontology#'>
+    <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+    <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+]>
+
+<rdf:RDF
+    xmlns:ns2="&ns2;"
+    xmlns:ns3="&ns3;"
+    xmlns:ns4="&ns4;"
+    xmlns:rdf="&rdf;"
+    xmlns:rdfs="&rdfs;"
+>
+<rdf:Property rdf:about="&ns2;contact_fname"
+    rdfs:label="Contact First Name"/>
+
+<rdf:Property rdf:about="&ns2;contact_lname"
+    rdfs:label="Contact Last Name"/>
+
+<rdf:Property rdf:about="&ns2;contact_tel"
+    rdfs:label="Contact Telephone Number"/>
+
+<rdf:Property rdf:about="&ns2;message"
+    rdfs:label="Message"/>
+
+<ns2:message rdf:about="&ns2;message_1"
+    ns2:contact_tel="31653105713"
+    ns2:date="2016-06-01 12:00:00">
+  <ns3:voicelabel_en rdf:resource="http://localhost/audio/stupidmessage.wav"/>
+</ns2:message>
+
+<rdf:Property rdf:about="&ns2;preferred_language"
+    rdfs:label="Preferred Language"/>
+
+<rdf:Property rdf:about="&ns2;user"
+    rdfs:label="User"/>
+
+<rdf:Property rdf:about="&ns3;voicelabel"
+    rdfs:label="voicelabel"/>
+
+<rdf:Property rdf:about="&ns3;voicelabel_en">
+  <ns4:language rdf:resource="http://lexvo.org/id/iso639-3/eng"/>
+  <rdfs:label xml:lang="en">English voicelabel</rdfs:label>
+  <rdfs:subPropertyOf rdf:resource="&ns3;voicelabel"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="&ns3;voicelabel_fr">
+  <ns4:language rdf:resource="http://lexvo.org/id/iso639-3/fra"/>
+  <rdfs:label xml:lang="en">French voicelabel</rdfs:label>
+  <rdfs:subPropertyOf rdf:resource="&ns3;voicelabel"/>
+</rdf:Property>
+
+<rdf:Property rdf:about="&ns3;voicelabel_nl">
+  <ns4:language rdf:resource="http://lexvo.org/id/iso639-3/nld"/>
+  <rdfs:label xml:lang="en">Dutch voicelabel</rdfs:label>
+  <rdfs:subPropertyOf rdf:resource="&ns3;voicelabel"/>
+</rdf:Property>
+
+</rdf:RDF>

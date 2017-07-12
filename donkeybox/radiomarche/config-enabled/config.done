@@ -1,0 +1,10 @@
+/* Generated file
+   Keep track of installed config files
+*/
+
+file('debug.pl','/home/pi/ClioPatria/config-available',1495522082).
+file('config.pl','/home/pi/ClioPatria/config-available',1495522082).
+file('store.pl','/home/pi/ClioPatria/config-available',1495522082).
+file('network.pl','/home/pi/ClioPatria/config-available',1495522082).
+file('zlib.pl','/home/pi/ClioPatria/config-available',1495522082).
+file('pengines.pl','/home/pi/ClioPatria/config-available',1495522082).
