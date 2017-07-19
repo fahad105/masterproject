@@ -1,6 +1,7 @@
 #!/bin/bash
 set -x
 
+#Note: This file is not used in the final version of the DonkeyBox
 echo "----------------- INSERT QUERY ---" >> /etc/network/cliopatrialog.txt
 
 #INSERT QUERY
