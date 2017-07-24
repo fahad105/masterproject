@@ -3,7 +3,8 @@ set -x
 
 
 if [ "$IFACE" = wlan0 ]; then
-	echo "wlan0: Just detected wifi connection" >> /etc/network/connectionlog.txt
-	#/bin/bash /etc/network/curltest.sh
-	#/bin/bash /etc/network/curlcliopatria.sh
+	#/usr/bin/curl -F "upfile=@/home/pi/kasadakanet/file.txt" 192.168.77.1:8080
+	
+	#QUERY=$(cat /home/pi/kasadakanet/query.txt)
+	#/usr/bin/curl 192.168.77.1:8910/demo/sparql/ --data-urlencode "query=${QUERY}" > /home/pi/kasadakanet/queryresult.rdf
 fi
